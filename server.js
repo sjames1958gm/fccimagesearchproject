@@ -8,7 +8,7 @@ var data = require('./data.js');
 var mongoose = require('mongoose');
 // mongoose.connect('mongodb://localhost/myurldatabase');
 mongoose.connect(process.env.MONGODB_URI, {authMechanism: 'ScramSHA1'});
-
+console.log("here: " + process.env.MONGODB_URI);
 
 var db = mongoose.connection;
 
