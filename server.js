@@ -2,7 +2,7 @@
 //
 var http = require('http');
 var path = require('path');
-// var data = require('./data.js');
+var data = require('./data.js');
 // var searchdata = require('./data2.js');
 
 var mongoose = require('mongoose');
@@ -29,17 +29,17 @@ var searchSchema = mongoose.Schema({
 });
 var SearchModel = mongoose.model('SearchModel', searchSchema);
 
-// data.forEach(function(e) { 
-//   let i = new ImageModel(e);
-//   i.save((err, doc) => {
-//     if (err) {
-//       console.log(err);
-//     }
-//     else {
+data.forEach(function(e) { 
+  let i = new ImageModel(e);
+  i.save((err, doc) => {
+    if (err) {
+      console.log(err);
+    }
+    else {
       
-//     }
-//   });
-// });
+    }
+  });
+});
 
 var express = require('express');
 
