@@ -1,0 +1,12 @@
+{
+  "name": "image-search",
+  "version": "0.0.0",
+  "description": "FCC image search",
+  "main": "server.js",
+  "repository": "",
+  "author": "Stephen James <sajames1958@gmail.com>",
+  "dependencies": {
+    "express": "~3.2.4",
+    "mongoose": "^4.4.17"
+  }
+}
