@@ -6,7 +6,9 @@ var path = require('path');
 // var searchdata = require('./data2.js');
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/myurldatabase');
+// mongoose.connect('mongodb://localhost/myurldatabase');
+mongoose.connect(process.env.MONGODB_URI, {authMechanism: 'ScramSHA1'});
+
 
 var db = mongoose.connection;
 
